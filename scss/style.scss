@@ -1,7 +1,12 @@
 @import '_nullable.scss';
 @import '_header.scss';
 @import '_ringblock.scss';
+@import '_filter.scss';
 @import '_picblock.scss';
+@import '_search.scss';
+@import '_payment.scss';
+@import '_hold.scss';
+@import '_footer.scss';
 
 .container {
 	max-width: 1220px;

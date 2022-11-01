@@ -1,0 +1,41 @@
+.payment {
+	position: relative;
+	margin-bottom: 70px;
+	&__inner {
+		background: #f2f4f5;
+		border-radius: 20px;
+		padding: 50px!important;
+		max-width: 1078px;
+	}
+
+	&__content {
+		max-width: 688px;
+	}
+
+	&__title {
+		font-weight: 800;
+		font-size: 44px;
+		line-height: 52px;
+		color: var(--main-black);
+		margin-bottom: 40px;
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		gap: 35px;
+		p {
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 30px;
+			color: #000000;
+		}
+	}
+
+	&__image {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: -100px;
+	}
+}

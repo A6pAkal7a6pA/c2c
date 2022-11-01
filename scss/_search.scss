@@ -1,0 +1,33 @@
+.search {
+	padding-bottom: 92px;
+	margin-bottom: 108px;
+	&__inner {
+		padding: 50px!important;
+		background: #ffcc4a;
+		position: relative;
+	}
+	&__content {
+		max-width: 440px;
+	}
+
+	&__title {
+		font-weight: 800;
+		font-size: 44px;
+		line-height: 52px;
+		color: var(--main-black);
+		margin-bottom: 40px;
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 40px;
+		color: var(--main-black);
+	}
+
+	&__image {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}

@@ -1,0 +1,26 @@
+.hold {
+	padding-top: 90px;
+	margin-bottom: 120px;
+	&__inner {
+		background: #ffcc4a;
+		border: 5px solid #ffc24a;
+		border-radius: 20px;
+		position: relative;
+		padding: 100px 50px 50px 50px!important;
+	}
+
+	&__image {
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translate(-50%, -50%);
+	}
+
+	&__text {
+		font-weight: 800;
+		font-size: 30px;
+		line-height: 40px;
+		text-align: center;
+		color: #000000;
+	}
+}

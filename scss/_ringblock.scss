@@ -1,9 +1,26 @@
 .ringblock {
+	background: url("../img/main_bg.png") center / cover no-repeat;
+	margin-top: 76.75px;
+	padding: 138px 0;
+	position: relative;
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		justify-content: space-between;
+	}
 
-  &__inner {}
+	&__title {
+		font-weight: 800;
+		font-size: 46px;
+		line-height: 58px;
+		color: #ffffff;
+		max-width: 773px;
+	}
 
-  &__img {
-    height: 450px;
-    margin-bottom: 100px;
-  }
+	&__image {
+		position: absolute;
+		right: 149px;
+		bottom: 0;
+	}
 }
