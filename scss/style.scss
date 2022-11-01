@@ -1,4 +1,11 @@
 @import '_nullable.scss';
-@import '_font.scss';
 @import '_header.scss';
 @import '_ringblock.scss';
+
+.container {
+	max-width: 1220px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}

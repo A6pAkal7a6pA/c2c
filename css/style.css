@@ -1,6 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap");
+@font-face {
+  font-family: 'Mont';
+  src: url("../fonts/Mont-Bold.eot");
+  src: local("Mont Bold"), local("Mont-Bold"), url("../fonts/Mont-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url("../fonts/Mont-SemiBold.eot");
+  src: local("Mont SemiBold"), local("Mont-SemiBold"), url("../fonts/Mont-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont-SemiBold.woff2") format("woff2"), url("../fonts/Mont-SemiBold.woff") format("woff"), url("../fonts/Mont-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url("../fonts/Mont-Regular.eot");
+  src: local("Mont Regular"), local("Mont-Regular"), url("../fonts/Mont-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  --main-purple: #c736ef;
   --main-black: #1B1B1B;
 }
 
@@ -13,7 +36,6 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -104,44 +126,42 @@ a {
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Mont";
-  src: url("../fonts/Mont-Bold.eot");
-  src: local("Mont Bold"), local("Mont-Bold"), url("../fonts/Mont-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
+.header {
+  height: 76.75px;
 }
-@font-face {
-  font-family: "Mont";
-  src: url("../fonts/Mont-SemiBold.eot");
-  src: local("Mont SemiBold"), local("Mont-SemiBold"), url("../fonts/Mont-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont-SemiBold.woff2") format("woff2"), url("../fonts/Mont-SemiBold.woff") format("woff"), url("../fonts/Mont-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Mont";
-  src: url("../fonts/Mont-Regular.eot");
-  src: local("Mont Regular"), local("Mont-Regular"), url("../fonts/Mont-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
+
 .header__inner {
-  max-width: 1220px;
-  margin: 14px auto 14px auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  font-family: "";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: '';
 }
+
 .header__logo {
   margin-right: 350px;
 }
+
 .header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 45px;
   margin: auto;
 }
+
 .ringblock__img {
   height: 450px;
   margin-bottom: 100px;
+}
+
+.container {
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
