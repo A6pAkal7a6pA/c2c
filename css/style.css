@@ -160,6 +160,21 @@ a {
   gap: 45px;
 }
 
+.header__link {
+  font-family: "Mont";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+  text-align: center;
+  color: #1b1b1b;
+}
+
+@media (max-width: 850px) {
+  .header__item:not(:first-child) {
+    display: none;
+  }
+}
+
 .ringblock {
   background: url("../img/main_bg.png") center/cover no-repeat;
   margin-top: 76.75px;
@@ -194,6 +209,66 @@ a {
   position: absolute;
   right: 149px;
   bottom: 0;
+  max-width: 666px;
+}
+
+.ringblock__image img {
+  max-width: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1620px) {
+  .ringblock__image {
+    right: 0;
+  }
+}
+
+@media (max-width: 1203px) {
+  .ringblock__image {
+    right: 0;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 1015px) {
+  .ringblock {
+    padding: 50px 0 0 0;
+  }
+  .ringblock__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+    gap: 66px;
+  }
+  .ringblock__image {
+    right: 0;
+    max-width: 500px;
+    position: relative;
+  }
+  .ringblock__title {
+    max-width: none;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .ringblock__image {
+    max-width: 344px;
+  }
+  .ringblock__title {
+    font-size: 36px;
+    line-height: 48px;
+  }
 }
 
 .filter {
@@ -235,6 +310,16 @@ a {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+}
+
+.filter__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .filter-option {
@@ -419,6 +504,16 @@ a {
 .filter-group__image {
   text-align: center;
   margin-bottom: 16px;
+  max-width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter-group__image img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 .filter-group__title {
@@ -445,6 +540,25 @@ a {
   font-weight: 500;
   font-size: 20px;
   line-height: 22px;
+}
+
+@media (max-width: 1140px) {
+  .filter-option__inner {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .filter-group__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .filter-group__item {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.picblock {
+  display: none;
 }
 
 .picblock__rectangle {
@@ -502,12 +616,19 @@ a {
 .search {
   padding-bottom: 92px;
   margin-bottom: 108px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .search__inner {
-  padding: 50px !important;
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
   background: #ffcc4a;
   position: relative;
+  border: 5px solid #ffc24a;
+  border-radius: 30px;
 }
 
 .search__content {
@@ -533,6 +654,65 @@ a {
   position: absolute;
   top: 0;
   right: 0;
+  max-width: 680px;
+  min-width: 435px;
+}
+
+.search__image img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+@media (max-width: 1220px) {
+  .search__image {
+    top: 30%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 1054px) {
+  .search__inner {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1015px) {
+  .search {
+    position: relative;
+    overflow: hidden;
+  }
+  .search__inner {
+    position: static;
+    padding-bottom: 190px;
+    border-radius: 15px;
+  }
+  .search__image {
+    right: 50%;
+    bottom: 0;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    max-width: 450px;
+  }
+  .search__content {
+    max-width: none;
+  }
+  .search__title {
+    font-size: 38px;
+    line-height: 45px;
+    margin-bottom: 30px;
+  }
+  .search__text {
+    font-size: 22px;
+    line-height: 32px;
+  }
 }
 
 .payment {
@@ -685,4 +865,9 @@ a {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+section:not(.search, .ringblock, .filter),
+footer {
+  display: none;
 }

@@ -27,5 +27,16 @@
 	}
 
 	&__link {
+		font-family: $fontfamilyMont;
+		font-weight: 700;
+		font-size: 21px;
+		line-height: 24px;
+		text-align: center;
+		color: #1b1b1b;
+	}
+	@media (max-width: 850px) {
+		&__item:not(:first-child) {
+			display: none;
+		}
 	}
 }
