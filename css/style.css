@@ -320,12 +320,12 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 40px;
 }
 
 .filter-option {
   background: #f2f4f5;
   border-radius: 20px;
-  margin-bottom: 40px;
 }
 
 .filter-option__inner {
@@ -554,6 +554,92 @@ a {
   .filter-group__item {
     font-size: 16px;
     line-height: 22px;
+  }
+}
+
+@media (max-width: 900px) {
+  .filter__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .filter-option__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .filter-option__item {
+    max-width: none;
+  }
+  .filter-option__input {
+    max-width: none;
+    width: 100%;
+  }
+  .filter-group {
+    gap: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .filter-group__category {
+    max-width: none;
+  }
+  .filter-group__title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+  .filter-group__menu {
+    margin-left: 96px;
+  }
+  .filter-group__item {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .filter-group__image {
+    margin: 0;
+  }
+  .filter-group__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .filter-option__inner {
+    padding: 20px 15px;
+  }
+  .filter-group {
+    gap: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .filter-group__category {
+    max-width: none;
+  }
+  .filter-group__title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .filter-group__menu {
+    margin-left: 63px;
+  }
+  .filter-group__item {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .filter-group__image {
+    max-width: 48px;
   }
 }
 
