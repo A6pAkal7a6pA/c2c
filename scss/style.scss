@@ -2,7 +2,7 @@
 @import '_header.scss';
 @import '_ringblock.scss';
 @import '_filter.scss';
-@import '_picblock.scss';
+@import '_info.scss';
 @import '_search.scss';
 @import '_payment.scss';
 @import '_hold.scss';
@@ -14,8 +14,4 @@
 	margin-right: auto;
 	padding-left: 20px;
 	padding-right: 20px;
-}
-section:not(.search, .ringblock, .filter),
-footer {
-	display: none;
 }

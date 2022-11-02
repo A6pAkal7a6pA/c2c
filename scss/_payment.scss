@@ -1,11 +1,13 @@
 .payment {
-	position: relative;
+	// position: relative;
 	margin-bottom: 70px;
+	overflow: hidden;
 	&__inner {
 		background: #f2f4f5;
 		border-radius: 20px;
-		padding: 50px!important;
+		padding: 50px;
 		max-width: 1078px;
+		position: relative;
 	}
 
 	&__content {
@@ -36,6 +38,68 @@
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-		right: -100px;
+		right: -15%;
+		img {
+			max-width: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	@media (max-width: 1130px) {
+		&__content {
+			max-width: 500px;
+		}
+		&__title {
+			font-size: 44px;
+			line-height: 52px;
+		}
+		&__text {
+			font-size: 16px;
+			line-height: 24px;
+		}
+		&__image {
+			right: -10%;
+		}
+	}
+	@media (max-width: 1015px) {
+		overflow: visible;
+		margin-bottom: 100px;
+		&__inner {
+			padding-bottom: 209px;
+		}
+		&__content {
+			max-width: none;
+		}
+		&__image {
+			top: auto;
+			bottom: 0;
+			right: 50%;
+			transform: translate(50%, 30%);
+			max-width: 400px;
+		}
+	}
+	@media (max-width: 500px) {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		&__inner {
+			padding-left: 20px;
+			padding-right: 20px;
+			border-radius: 0;
+		}
+		&__title {
+			font-size: 38px;
+			line-height: 45px;
+		}
+		&__text {
+			p {
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+		&__image {
+			max-width: none;
+			width: 100%;
+			transform: translate(50%, 40%);
+		}
 	}
 }

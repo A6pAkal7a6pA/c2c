@@ -17,6 +17,27 @@
 	&__logo {
 	}
 
+	&__toggle {
+		display: none;
+		font-family: $fontfamilyMont;
+		font-weight: 700;
+		font-size: 21px;
+		line-height: 24px;
+		text-align: center;
+		color: #1b1b1b;
+		padding-right: 26px;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 0;
+			width: 16px;
+			height: 16px;
+			background: url("../img/icons/header_CaretDown.svg") center / cover no-repeat;
+		}
+	}
 	&__list {
 		display: flex;
 		align-items: center;
@@ -24,6 +45,7 @@
 	}
 
 	&__item {
+
 	}
 
 	&__link {
@@ -33,10 +55,39 @@
 		line-height: 24px;
 		text-align: center;
 		color: #1b1b1b;
+		&_active {
+			font-weight: 800;
+		}
 	}
+
 	@media (max-width: 850px) {
-		&__item:not(:first-child) {
+		&__inner {
+			position: relative;
+		}
+		&__list {
 			display: none;
+		}
+		&_active {
+			.header__toggle {
+				&::after {
+					transform: translateY(-50%) rotate(180deg);
+				}
+			}
+			.header__list {
+				top: 76.75px;
+				position: absolute;
+				flex-direction: column;
+				display: flex;
+				background: #e5e5e5;
+				border-radius: 0px 0px 15px 15px;
+				width: 100%;
+				left: 0;
+				align-items: flex-end;
+				padding: 22px 46px;
+			}
+		}
+		&__toggle {
+			display: block;
 		}
 	}
 }

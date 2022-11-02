@@ -3,6 +3,7 @@
 	margin-top: 76.75px;
 	padding: 138px 0;
 	position: relative;
+	margin-bottom: 100px;
 	&__inner {
 		display: flex;
 		align-items: center;
@@ -60,6 +61,7 @@
 		}
 	}
 	@media (max-width: 500px) {
+		margin-bottom: 50px;
 		&__image {
 			max-width: 344px;
 		}

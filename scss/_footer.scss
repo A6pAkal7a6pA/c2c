@@ -49,4 +49,26 @@
 			transform: translateY(-50%);
 		}
 	}
+	@media (max-width: 850px) {
+		&__title {
+			font-size: 38px;
+			line-height: 45px;
+		}
+		&__text {
+			font-size: 22px;
+			line-height: 32px;
+		}
+		&__button {
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+	@media (max-width: 700px) {
+		padding: 70px 0;
+	}
+	@media (max-width: 650px) {
+		&__buttons {
+			flex-direction: column;
+		}
+	}
 }

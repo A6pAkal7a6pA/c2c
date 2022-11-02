@@ -229,9 +229,7 @@
 		&-group {
 			gap: 10px;
 			flex-direction: column;
-			&__category {
-				max-width: none;
-			}
+
 			&__title {
 				font-size: 24px;
 				line-height: 30px;
@@ -239,6 +237,7 @@
 			}
 			&__menu {
 				margin-left: 96px;
+				display: none;
 			}
 			&__item {
 				font-size: 20px;
@@ -251,10 +250,39 @@
 				display: flex;
 				align-items: center;
 				gap: 16px;
+				position: relative;
+				&::after {
+					content: "";
+					position: absolute;
+					right: 0;
+					top: 50%;
+					width: 24px;
+					height: 24px;
+					background: url("../img/icons/CaretDown.svg") center / cover no-repeat;
+					transform: translateY(-50%) rotate(180deg);
+				}
+			}
+			&__category {
+				max-width: none;
+				&_active {
+					.filter-group__head {
+						&::after {
+							transform: translateY(-50%) rotate(0);
+						}
+					}
+					.filter-group__menu {
+						display: flex;
+					}
+				}
 			}
 		}
 	}
 	@media (max-width: 500px) {
+		margin-bottom: 65px;
+		&__title {
+			font-size: 38px;
+			line-height: 45px;
+		}
 		&-option {
 			&__inner {
 				padding: 20px 15px;
