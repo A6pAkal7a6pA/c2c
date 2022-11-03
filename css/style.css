@@ -863,6 +863,10 @@ a {
           justify-content: center;
 }
 
+.info__items .info-agree {
+  display: none;
+}
+
 @media (max-width: 1220px) {
   .info__items {
     -webkit-box-pack: center;

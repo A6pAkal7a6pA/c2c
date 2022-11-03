@@ -91,6 +91,11 @@
 			justify-content: center;
 		}
 	}
+	&__items {
+		.info-agree {
+			display: none;
+		}
+	}
 	@media (max-width: 1220px) {
 		&__items {
 			justify-content: center;
