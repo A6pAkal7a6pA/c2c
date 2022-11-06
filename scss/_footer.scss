@@ -38,6 +38,9 @@
 		width: 100%;
 		padding: 20px;
 		position: relative;
+		&:hover {
+			background: #EBB62F;
+		}
 		&::after {
 			content: "";
 			width: 24px;

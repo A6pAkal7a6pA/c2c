@@ -193,6 +193,10 @@ a {
   color: #1b1b1b;
 }
 
+.header__link:hover {
+  text-decoration: underline;
+}
+
 .header__link_active {
   font-weight: 800;
 }
@@ -1286,6 +1290,10 @@ a {
   width: 100%;
   padding: 20px;
   position: relative;
+}
+
+.footer__button:hover {
+  background: #EBB62F;
 }
 
 .footer__button::after {

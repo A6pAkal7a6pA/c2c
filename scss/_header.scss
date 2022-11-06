@@ -55,6 +55,9 @@
 		line-height: 24px;
 		text-align: center;
 		color: #1b1b1b;
+		&:hover {
+			text-decoration: underline;
+		}
 		&_active {
 			font-weight: 800;
 		}
