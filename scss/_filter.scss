@@ -1,5 +1,5 @@
 .filter {
-	margin-bottom: 120px;
+	margin-bottom: 108px;
 	&__title {
 		font-style: normal;
 		font-weight: 800;
@@ -7,7 +7,7 @@
 		line-height: 52px;
 		text-align: center;
 		color: #1b1b1b;
-		margin-bottom: 65px;
+		margin-bottom: 72px;
 		&_underline {
 			position: relative;
 			&::after {
@@ -38,7 +38,7 @@
 	&__content {
 		display: flex;
 		flex-direction: column;
-		gap: 40px;
+		gap: 56px;
 	}
 	&-option {
 		background: #f2f4f5;
@@ -278,10 +278,14 @@
 		}
 	}
 	@media (max-width: 500px) {
-		margin-bottom: 65px;
+		margin-bottom: 72px;
 		&__title {
 			font-size: 38px;
 			line-height: 45px;
+			margin-bottom: 64px;
+		}
+		&__content {
+			gap: 50px;
 		}
 		&-option {
 			&__inner {

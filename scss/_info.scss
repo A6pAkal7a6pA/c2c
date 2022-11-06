@@ -1,10 +1,10 @@
 .info {
-	margin-bottom: 120px;
+	margin-bottom: 108px;
 	&__inner {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 30px;
+		gap: 48px;
 	}
 
 	&__items {
@@ -140,9 +140,13 @@
 		}
 	}
 	@media (max-width: 500px) {
-		margin-bottom: 100px;
+		margin-bottom: 72px;
+		&__items {
+			gap: 16px;
+		}
 		&-agree {
 			border-radius: 15px;
+			margin: 16px 0;
 			&__inner {
 				padding: 17.5px 22px;
 			}

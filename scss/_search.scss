@@ -1,5 +1,5 @@
 .search {
-	padding-bottom: 92px;
+	padding-bottom: 84px;
 	margin-bottom: 108px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -22,7 +22,7 @@
 		font-size: 44px;
 		line-height: 52px;
 		color: var(--main-black);
-		margin-bottom: 40px;
+		margin-bottom: 48px;
 	}
 
 	&__text {
@@ -87,6 +87,9 @@
 		}
 	}
 	@media (max-width: 500px) {
-		margin-bottom: 70px;
+		margin-bottom: 72px;
+		&__title {
+			margin-bottom: 32px;
+		}
 	}
 }

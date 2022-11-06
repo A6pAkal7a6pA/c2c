@@ -237,7 +237,7 @@ a {
   margin-top: 76.75px;
   padding: 138px 0;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 108px;
 }
 
 .ringblock__inner {
@@ -321,7 +321,7 @@ a {
 
 @media (max-width: 500px) {
   .ringblock {
-    margin-bottom: 50px;
+    margin-bottom: 72px;
   }
   .ringblock__image {
     max-width: 344px;
@@ -333,7 +333,7 @@ a {
 }
 
 .filter {
-  margin-bottom: 120px;
+  margin-bottom: 108px;
 }
 
 .filter__title {
@@ -343,7 +343,7 @@ a {
   line-height: 52px;
   text-align: center;
   color: #1b1b1b;
-  margin-bottom: 65px;
+  margin-bottom: 72px;
 }
 
 .filter__title_underline {
@@ -381,7 +381,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 40px;
+  gap: 56px;
 }
 
 .filter-option {
@@ -698,11 +698,15 @@ a {
 
 @media (max-width: 500px) {
   .filter {
-    margin-bottom: 65px;
+    margin-bottom: 72px;
   }
   .filter__title {
     font-size: 38px;
     line-height: 45px;
+    margin-bottom: 64px;
+  }
+  .filter__content {
+    gap: 50px;
   }
   .filter-option__inner {
     padding: 20px 15px;
@@ -734,7 +738,7 @@ a {
 }
 
 .info {
-  margin-bottom: 120px;
+  margin-bottom: 108px;
 }
 
 .info__inner {
@@ -748,7 +752,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
+  gap: 48px;
 }
 
 .info__items {
@@ -919,10 +923,14 @@ a {
 
 @media (max-width: 500px) {
   .info {
-    margin-bottom: 100px;
+    margin-bottom: 72px;
+  }
+  .info__items {
+    gap: 16px;
   }
   .info-agree {
     border-radius: 15px;
+    margin: 16px 0;
   }
   .info-agree__inner {
     padding: 17.5px 22px;
@@ -933,7 +941,7 @@ a {
 }
 
 .search {
-  padding-bottom: 92px;
+  padding-bottom: 84px;
   margin-bottom: 108px;
   padding-left: 20px;
   padding-right: 20px;
@@ -959,7 +967,7 @@ a {
   font-size: 44px;
   line-height: 52px;
   color: var(--main-black);
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 .search__text {
@@ -1036,12 +1044,15 @@ a {
 
 @media (max-width: 500px) {
   .search {
-    margin-bottom: 70px;
+    margin-bottom: 72px;
+  }
+  .search__title {
+    margin-bottom: 32px;
   }
 }
 
 .payment {
-  margin-bottom: 70px;
+  margin-bottom: 108px;
   overflow: hidden;
 }
 
@@ -1140,6 +1151,8 @@ a {
   .payment {
     padding-left: 0 !important;
     padding-right: 0 !important;
+    padding-bottom: 100px;
+    margin-bottom: 72px;
   }
   .payment__inner {
     padding-left: 20px;
@@ -1149,6 +1162,7 @@ a {
   .payment__title {
     font-size: 38px;
     line-height: 45px;
+    margin-bottom: 32px;
   }
   .payment__text p {
     font-size: 16px;
@@ -1164,7 +1178,7 @@ a {
 
 .hold {
   padding-top: 90px;
-  margin-bottom: 120px;
+  margin-bottom: 108px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -1214,9 +1228,16 @@ a {
   }
 }
 
+@media (max-width: 500px) {
+  .hold {
+    padding-top: 50px;
+    margin-bottom: 72px;
+  }
+}
+
 .footer {
   background: #f2f4f5;
-  padding: 90px 0;
+  padding: 72px 0 108px 0;
 }
 
 .footer__inner {
@@ -1227,7 +1248,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 60px;
+  gap: 48px;
 }
 
 .footer__title {
@@ -1306,6 +1327,19 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    padding-top: 64px;
+    padding-bottom: 72px;
+  }
+  .footer__inner {
+    gap: 32px;
+  }
+  .footer__buttons {
+    gap: 16px;
   }
 }
 
