@@ -1,0 +1,51 @@
+.copy {
+	background: #000000;
+	padding: 30px 0;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__describe {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+	}
+
+	&__logo {
+	}
+
+	&__text {
+		font-family: $fontfamilyMont;
+		font-weight: 700;
+		font-size: 21px;
+		line-height: 24px;
+		text-align: center;
+		color: #e5e5e5;
+	}
+	.email {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		&_img {
+		}
+
+		&__title {
+			font-family: $fontfamilyMont;
+			font-weight: 700;
+			font-size: 21px;
+			line-height: 24px;
+			text-align: center;
+			color: #ffffff;
+		}
+	}
+	@media (max-width: 630px) {
+		&__inner {
+			justify-content: center;
+		}
+		&__describe {
+			display: none;
+		}
+	}
+}
