@@ -42,10 +42,12 @@
 		display: flex;
 		align-items: center;
 		gap: 45px;
+		.header-email {
+			display: none;
+		}
 	}
 
 	&__item {
-
 	}
 
 	&__link {
@@ -63,12 +65,37 @@
 		}
 	}
 
-	@media (max-width: 850px) {
+	&-email {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		&_img {
+		}
+
+		&__title {
+			font-family: $fontfamilyMont;
+			font-weight: 700;
+			font-size: 21px;
+			line-height: 24px;
+			text-align: center;
+			color: #1b1b1b;
+		}
+	}
+
+	@media (max-width: 980px) {
+		&-email {
+			display: none;
+		}
 		&__inner {
 			position: relative;
 		}
 		&__list {
 			display: none;
+			gap: 20px;
+			.header-email {
+				margin-top: 20px;
+				display: flex;
+			}
 		}
 		&_active {
 			.header__toggle {
